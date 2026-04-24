@@ -1,0 +1,42 @@
+﻿--------------------------------|---------|----------|---------|---------|------------------------------------
+File                            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                  
+--------------------------------|---------|----------|---------|---------|------------------------------------
+All files                       |   94.03 |    84.98 |   91.66 |   94.64 |                                    
+ src                            |     100 |      100 |     100 |     100 |                                    
+  app.module.js                 |     100 |      100 |     100 |     100 |                                    
+ src/common/constants           |     100 |      100 |     100 |     100 |                                    
+  index.js                      |     100 |      100 |     100 |     100 |                                    
+ src/common/filters             |     100 |     87.5 |     100 |     100 |                                    
+  all-exceptions.filter.js      |     100 |     87.5 |     100 |     100 | 29,32                              
+ src/common/interceptors        |     100 |      100 |     100 |     100 |                                    
+  logging.interceptor.js        |     100 |      100 |     100 |     100 |                                    
+ src/common/utils               |   97.29 |    88.52 |     100 |   99.03 |                                    
+  circuit-breaker.util.js       |     100 |     91.3 |     100 |     100 | 25,29                              
+  date.util.js                  |      96 |       75 |     100 |     100 | 57                                 
+  hash.util.js                  |   91.66 |    83.33 |     100 |     100 | 19                                 
+  retry.util.js                 |   96.55 |    89.28 |     100 |   95.83 | 74                                 
+ src/modules/balance            |   94.91 |    78.57 |   81.25 |   95.65 |                                    
+  balance.controller.js         |   94.11 |      100 |      75 |   94.11 | 21                                 
+  balance.module.js             |     100 |      100 |     100 |     100 |                                    
+  balance.service.js            |   94.68 |    78.57 |   83.33 |    95.6 | 53-58,129,169                      
+ src/modules/balance/entities   |     100 |      100 |     100 |     100 |                                    
+  employee-balance.entity.js    |     100 |      100 |     100 |     100 |                                    
+ src/modules/hcm                |    91.2 |    86.04 |   79.31 |   91.62 |                                    
+  hcm-sync.service.js           |   92.02 |    83.58 |    90.9 |   92.59 | 95-102,347-350,379-382,386-390,430 
+  hcm.controller.js             |   71.42 |      100 |   33.33 |   71.42 | 19-28                              
+  hcm.module.js                 |     100 |      100 |     100 |     100 |                                    
+  hcm.service.js                |   89.28 |    94.73 |      80 |   89.28 | 114-116,154                        
+ src/modules/sync-log           |     100 |      100 |     100 |     100 |                                    
+  sync-log.entity.js            |     100 |      100 |     100 |     100 |                                    
+  sync-log.module.js            |     100 |      100 |     100 |     100 |                                    
+ src/modules/timeoff            |   94.69 |       83 |     100 |   95.37 |                                    
+  timeoff.controller.js         |     100 |      100 |     100 |     100 |                                    
+  timeoff.module.js             |     100 |      100 |     100 |     100 |                                    
+  timeoff.service.js            |   93.65 |    82.29 |     100 |   94.44 | 216-222,227-236,421,494,712,723    
+ src/modules/timeoff/dto        |   33.33 |      100 |     100 |   33.33 |                                    
+  create-timeoff-request.dto.js |   33.33 |      100 |     100 |   33.33 | 10-32                              
+  update-request-status.dto.js  |   33.33 |      100 |     100 |   33.33 | 9-28                               
+ src/modules/timeoff/entities   |     100 |      100 |     100 |     100 |                                    
+  idempotency-record.entity.js  |     100 |      100 |     100 |     100 |                                    
+  timeoff-request.entity.js     |     100 |      100 |     100 |     100 |                                    
+--------------------------------|---------|----------|---------|---------|------------------------------------

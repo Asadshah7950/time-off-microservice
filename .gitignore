@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+
+# Build artifacts
+dist/
+data/*.db
+
+# Coverage artifacts
+coverage/
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Logs and temp outputs
+*.log
