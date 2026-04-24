@@ -1,7 +1,7 @@
 # Time-Off Service
 
 ## GitHub Repository
-[LINK WILL BE ADDED AFTER PUSH — UPDATE THIS]
+https://github.com/Asadshah7950/time-off-microservice
 
 This submission implements a production-minded NestJS + SQLite time-off microservice that goes beyond CRUD by handling idempotent writes, concurrency-safe balance mutations, and eventually consistent HCM synchronization under upstream instability. The design matters because it protects user-facing request flow even when HCM is slow or unavailable, while still preserving balance invariants and auditability. Core paths include transactional create/approve/reject/cancel workflows, asynchronous HCM sync state tracking, retry with circuit breaking, and batch reconciliation with safe drift handling. The test suite is intentionally failure-mode driven: it covers race conditions, idempotency collisions, transient HCM outages, deterministic mismatches, and reconciliation scenarios that are common in real production systems. Coverage is high across statements, branches, functions, and lines, with branch-focused tests added for control-heavy utilities and sync logic. A deliberate tradeoff is local-first commit with eventual upstream convergence, which favors availability and predictable latency over strict cross-system immediacy.
 
