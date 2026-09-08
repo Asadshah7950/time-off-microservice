@@ -9,6 +9,7 @@ const { TimeOffModule } = require('./modules/timeoff/timeoff.module');
 const { BalanceModule } = require('./modules/balance/balance.module');
 const { HcmModule } = require('./modules/hcm/hcm.module');
 const { SyncLogModule } = require('./modules/sync-log/sync-log.module');
+const { HealthModule } = require('./modules/health/health.module');
 const { AllExceptionsFilter } = require('./common/filters/all-exceptions.filter');
 const { LoggingInterceptor } = require('./common/interceptors/logging.interceptor');
 
@@ -28,6 +29,7 @@ const dbPath = process.env.DB_PATH || './data/timeoff.db';
     BalanceModule,
     HcmModule,
     TimeOffModule,
+    HealthModule,
   ],
   providers: [
     {

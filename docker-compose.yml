@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  timeoff-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - DB_PATH=/app/data/timeoff.db
+      - HCM_BASE_URL=http://mock-hcm:3001
+      - RATE_LIMIT_MAX_REQUESTS=1000
+    volumes:
+      - timeoff-data:/app/data
+    depends_on:
+      - mock-hcm
+    networks:
+      - timeoff-network
+
+  mock-hcm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["npm", "run", "start:mock-hcm"]
+    ports:
+      - "3001:3001"
+      - "3101:3101"
+    environment:
+      - HCM_PORT=3001
+      - HCM_ADMIN_PORT=3101
+    networks:
+      - timeoff-network
+
+volumes:
+  timeoff-data:
+
+networks:
+  timeoff-network:
+    driver: bridge
