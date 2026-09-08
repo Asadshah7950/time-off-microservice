@@ -1,4 +1,10 @@
-# Time-Off Service
+# Time-Off Microservice
+
+[![CI](https://github.com/Asadshah7950/time-off-microservice/actions/workflows/ci.yml/badge.svg)](https://github.com/Asadshah7950/time-off-microservice/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![NestJS](https://img.shields.io/badge/NestJS-10.x-E0234E?logo=nestjs)](https://nestjs.com)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=nodedotjs)](https://nodejs.org)
+[![Testing](https://img.shields.io/badge/Tests-Jest-C21325?logo=jest)](https://jestjs.io)
 
 ## GitHub Repository
 https://github.com/Asadshah7950/time-off-microservice
@@ -208,3 +214,7 @@ All files                       |   94.03 |    84.98 |   91.66 |   94.64 |
   timeoff-request.entity.js     |     100 |      100 |     100 |     100 |
 --------------------------------|---------|----------|---------|---------|------------------------------------
 ```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
